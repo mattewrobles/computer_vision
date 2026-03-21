@@ -118,10 +118,11 @@ classifyVideo();
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Ocultar el preloader después de 2 segundos de que la página se haya cargado completamente
   window.addEventListener("load", function() {
     setTimeout(function() {
-      document.getElementById('preloader').style.display = 'none';
-    }, 2000); // 2000 milisegundos = 2 segundos
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('hidden');
+      setTimeout(() => preloader.style.display = 'none', 600);
+    }, 2200);
   });
 });

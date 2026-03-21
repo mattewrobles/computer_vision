@@ -5,20 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@latest/lib/addons/p5.dom.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>   
+  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.js"></script>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-
-  <title>Teachable Machinne</title>
+  <title>Computer Vision</title>
 </head>
 <body>
+
   <div id="preloader">
-    <div id="preloader-text">Abre y cierra la boca</div>
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+      <p class="preloader-title">Computer Vision</p>
+      <p class="preloader-sub">Cargando modelo de ML5...</p>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
   </div>
-  <script src="sketch.js">
-    
-  </script>
+
+  <div class="ui-panel">
+    <a class="back-link" href="https://mattewrobles.github.io" title="Back to portfolio">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    <div class="panel-header">
+      <h1 class="panel-title">Computer<br><span>Vision</span></h1>
+      <p class="panel-desc">Teachable Machine + ML5.js detecting facial expressions in real time.</p>
+    </div>
+    <div class="hint-box">
+      <span class="hint-dot"></span>
+      <span class="hint-text">Abre y cierra la boca</span>
+    </div>
+  </div>
+
+  <script src="sketch.js"></script>
 </body>
 </html>
